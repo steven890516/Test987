@@ -1,0 +1,280 @@
+body {
+  /*max-width: 1920px;*/
+  margin: 0 auto;
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+  line-height: 150%; /* 行高放大1.5倍 ，字體大小 16 px → 行高 = 16 px × 1.5 = 24 px */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1rem;
+}
+
+ol{
+  list-style: decimal;
+  font-size: 1rem;
+}
+
+li{
+  margin-left: 25px;
+  font-size: 1rem;
+}
+
+h1{
+  font-size: 1.75rem; /* 28px */
+  font-weight: bold;
+}
+
+h2{
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+}
+
+h3{
+  font-size: 1.25rem; /* 20px */
+  font-weight: bold;
+}
+
+.content{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-top: 2px solid gray;
+  border-bottom: 3px solid gray;
+}
+
+html { font-size: 16px; }
+
+/* 導覽列 */
+.nav-ul{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+  font-weight: bold;
+  gap: 40px;
+  font-size: 1.75rem; /*28px*/
+}
+
+.nav-li{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.75rem;
+  margin-left: 0px;
+}
+
+.nav-li a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s;
+}
+
+.nav-li a:hover {
+  color: #0027D5;
+}
+
+/* 橫幅 */
+.banner{
+  display: flex;
+  align-items: center;
+}
+
+.left,.right {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
+
+.banner img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.right{
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.right h1{
+   font-size: 1.75rem; /*28px*/
+}
+
+.right-date{
+  color: #3C3C3C;
+  font-size: 1rem; /*16px*/
+}
+
+.right-content{
+  color: #0027D5;
+  padding-top: 4px;
+  padding-bottom: 12px;
+}
+
+.badge{
+  color: #FFF;
+  margin-left: 5px;
+  background-color: #0027D5;
+  font-size: 1rem; /* 最新文章16px */
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 9999px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+/* 前言 */
+.section-Introduction{
+  color: #0027D5;
+  font-size: 1.75rem; /* 前言28px */
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.section{
+  max-width: 636px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /*margin-bottom: 24px;*/
+  /*margin-bottom: 48px;*/
+  /*gap: 0.75rem;*/
+}
+
+.wrap{
+  margin-bottom: 24px;
+}
+
+.wrap p{
+  margin-bottom: 8px;
+}
+
+
+.section img{
+  width: 100%;
+  margin-top: 24px;
+}
+
+.section h3{
+  margin-bottom: 12px;
+}
+
+
+.section a{
+  text-decoration: none;
+  color: #0027D5;
+  transition: color 0.3s;
+}
+
+.section a:hover{
+  text-decoration: revert;
+}
+
+.wrap-up{
+  background-color: #EDEDED;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.wrap-up2{
+  background-color: #EDEDED;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.tip-message{
+  background-color: #EDEDED;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.list-disc{
+  list-style: disc;
+}
+
+.section .contact-a{
+  text-decoration: underline;
+}
+
+.page{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.page-down{
+	font-size: 1rem;
+	color: #4B4B4B;
+  display: inline-flex;
+  align-items: center;
+	text-decoration: none;
+	border-radius: 40px;
+	border: 2px solid #4B4B4B;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.page-up{
+	font-size: 1rem;
+	color: #4B4B4B;
+  display: inline-flex;
+  align-items: center;
+	text-decoration: none;
+	border-radius: 40px;
+	border: 2px solid #4B4B4B;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.page-down-text{
+  padding-right: 4px;
+}
+
+.page-up-text{
+  padding-left: 4px;
+}
+
+
+.footer-content{
+  max-width: 1296px;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+
+.email a{
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s;
+}
+
+.email a:hover{
+  color: #0027D5;
+}
+
+.icon-list{
+  display: flex;
+  align-items: center;
+}
+
+.company{
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.list-disc .read-a{
+  color: #000000;
+}
+
+.icon-list li{
+  margin-left: 0px;
+}
